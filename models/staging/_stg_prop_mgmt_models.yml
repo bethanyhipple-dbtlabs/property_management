@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: stg_leases
+    description: The timeline of a lease. One lease per unit. 
     columns:
       - name: lease_id
         tests:
@@ -16,7 +17,7 @@ models:
           - not_null
 
   - name: stg_properties
-    description: The name and address of the properties
+    description: The name and addresses of the properties
     columns:
       - name: property_id
         tests:
